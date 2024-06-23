@@ -3,7 +3,7 @@
 /// </summary>
 public class FactoryClient
 {
-    public void ExecuteFactory()
+    public void Execute()
     {
         // initialize logistics
         Logistics logistics = new RoadLogicstics();

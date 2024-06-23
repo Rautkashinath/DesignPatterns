@@ -7,5 +7,8 @@
 
         AbstractFactoryClient abstractFactoryClient = new AbstractFactoryClient();
         abstractFactoryClient.Execute();
+
+        BuilderClient builderClient = new BuilderClient();
+        builderClient.Execute();
     }
 }

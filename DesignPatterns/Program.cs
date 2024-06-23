@@ -4,5 +4,8 @@
     {
         FactoryClient factoryClient = new FactoryClient();
         factoryClient.ExecuteFactory();
+
+        AbstractFactoryClient abstractFactoryClient = new AbstractFactoryClient();
+        abstractFactoryClient.Execute();
     }
 }

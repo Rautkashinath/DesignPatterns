@@ -10,7 +10,7 @@
 
         BuilderClient builderClient = new BuilderClient();
         builderClient.Execute();
-
+        
         SingletonClient singletonClient = new SingletonClient();
         singletonClient.Execute();
     }

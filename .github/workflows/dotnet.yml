@@ -32,4 +32,4 @@ jobs:
     - name: Create the package
       run: dotnet pack --configuration Release
     - name: Publish the package to GPR
-      run: dotnet nuget push D:\a\DesignPatterns\DesignPatterns\DesignPatterns\bin\Release\DesignPatterns.1.0.0.nupkg
+      run: dotnet nuget push **/*.nupkg --api-key ${{ secrets.NUGET_DOT_ORG_API_KEY }} --skip-duplicate

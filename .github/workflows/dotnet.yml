@@ -27,7 +27,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish Nuget package          
-      uses: myci-actions/publish-nuget@5
+      uses: actions/publish-nuget@5
       with:
         filename: '*.nupkg'
         api-key: "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"

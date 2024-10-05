@@ -29,7 +29,7 @@ jobs:
     - name: Publish Nuget package          
       uses: myci-actions/publish-nuget@5
       with:
-        filename: '*.nupkg'
+        filename: 'DesignPatterns.nupkg'
         api-key: ${{ secrets.NUGET_DOT_ORG_API_KEY }}
         repo-url: 'https://nuget.pkg.github.com/Rautkashinath/index.json'
       

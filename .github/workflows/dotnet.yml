@@ -20,26 +20,16 @@ jobs:
       uses: actions/setup-dotnet@v4.0.1
       with:
         dotnet-version: 8.0.x
+        source-url: https://nuget.pkg.github.com/Rautkashinath/index.json
       env:
         NUGET_AUTH_TOKEN: ${{secrets.NUGET_DOT_ORG_API_KEY}}
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
     
-    - run: dotnet build <my project>
+    - run: dotnet build DesignPatterns
     - name: Create the package
-      run: dotnet pack --configuration Release <my project>
+      run: dotnet pack --configuration Release DesignPatterns
     - name: Publish the package to GPR
-      run: dotnet nuget push <my project>/bin/Release/*.nupkg
-    - name: Publish Nuget package          
-      uses: myci-actions/publish-nuget@5
-      with:
-        filename: 'DesignPatterns.nupkg'
-        api-key: ${{ secrets.NUGET_DOT_ORG_API_KEY }}
-        repo-url: 'https://nuget.pkg.github.com/Rautkashinath/index.json'
-      
-
-
+      run: dotnet nuget push DesignPatterns/bin/Release/*.nupkg

@@ -27,9 +27,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    
-    - run: dotnet build DesignPatterns
     - name: Create the package
-      run: dotnet pack --configuration Release DesignPatterns
+      run: dotnet pack --configuration Release
     - name: Publish the package to GPR
       run: dotnet nuget push DesignPatterns/bin/Release/*.nupkg

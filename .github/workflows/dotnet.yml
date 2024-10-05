@@ -23,6 +23,8 @@ jobs:
         source-url: https://nuget.pkg.github.com/Rautkashinath/index.json
       env:
         NUGET_AUTH_TOKEN: ${{secrets.NUGET_DOT_ORG_API_KEY}}
+        packages_source: https://nuget.pkg.github.com/Rautkashinath/index.json
+        packages_personal_access_token: ${{secrets.NUGET_DOT_ORG_API_KEY}}
     - name: Restore dependencies
       run: dotnet restore
     - name: Build

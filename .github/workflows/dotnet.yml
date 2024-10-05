@@ -26,8 +26,8 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore --configuration Release
     - name: Create the package
       run: dotnet pack --configuration Release
     - name: Publish the package to GPR
-      run: dotnet nuget push /**/Release/*.nupkg
+      run: dotnet nuget push D:\a\DesignPatterns\DesignPatterns\DesignPatterns\bin\Release\DesignPatterns.1.0.0.nupkg

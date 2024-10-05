@@ -12,11 +12,11 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v4
-    - name: Setup .NET
+    - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v4.0.1
       with:
         dotnet-version: 8.0.x
@@ -30,7 +30,7 @@ jobs:
       uses: myci-actions/publish-nuget@5
       with:
         filename: '*.nupkg'
-        api-key: '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'
+        api-key: ${{ secrets.NUGET_DOT_ORG_API_KEY }}
         repo-url: 'https://nuget.pkg.github.com/Rautkashinath/index.json'
       
 

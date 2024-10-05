@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RepositoryUrl>https://github.com/Rautkashinath/DesignPatterns</RepositoryUrl>
-    <PackageId>DesignPatterns.K.T.R</PackageId>
+    <PackageId>DesignPatterns</PackageId>
     <Version>2.0.0</Version>
     <Authors>Kashinath</Authors>
   </PropertyGroup>

@@ -14,7 +14,7 @@
         SingletonClient singletonClient = new SingletonClient();
         singletonClient.Execute();
 
-        PrototypeClient prototypeClient = new PrototypeClient();
+        PrototypeClient prototypeClient = new PrototypeClient1();
         prototypeClient.Execute();
     }
 }

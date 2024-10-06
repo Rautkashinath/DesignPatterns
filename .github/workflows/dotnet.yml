@@ -29,7 +29,20 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore --configuration Release
+
+
+  create-package:
+    runs-on: windows-latest
+    needs: build
+    
+    steps:
     - name: Create the package
       run: dotnet pack --configuration Release
+
+  publish-package:
+    runs-on: windows-latest
+    needs: create-package
+    
+    steps:
     - name: Publish the package to GPR
       run: dotnet nuget push **/*.nupkg --api-key ${{ secrets.NUGET_DOT_ORG_API_KEY }} --skip-duplicate

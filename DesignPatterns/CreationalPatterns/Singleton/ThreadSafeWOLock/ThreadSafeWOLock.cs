@@ -1,6 +1,6 @@
 public sealed class ThreadSafeWOLock
 {
-    public static ThreadSafeWOLock threadSafeWOLock = new ThreadSafeWOLock();
+    private static readonly ThreadSafeWOLock threadSafeWOLock = new();
 
     private ThreadSafeWOLock() { }
 

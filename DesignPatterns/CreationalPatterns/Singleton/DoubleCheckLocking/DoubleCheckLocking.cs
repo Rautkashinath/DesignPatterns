@@ -1,7 +1,7 @@
 public sealed class DoubleCheckLocking
 {
-    private static DoubleCheckLocking _instance = null;
-    private static object _lock = new object();
+    private static DoubleCheckLocking? _instance;
+    private static readonly object _lock = new();
 
     private DoubleCheckLocking() { }
     public static DoubleCheckLocking GetInstance()
@@ -10,8 +10,7 @@ public sealed class DoubleCheckLocking
         {
             lock(_lock)
             {
-                if (_instance == null)
-                    _instance = new DoubleCheckLocking();
+                _instance ??= new DoubleCheckLocking();
             }
         }
 

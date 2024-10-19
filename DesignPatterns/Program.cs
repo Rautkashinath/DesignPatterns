@@ -1,6 +1,6 @@
 ﻿public class Program
 {
-    public static void Main(string []args)
+    public static void ExecuteCreationalPatterns()
     {
         FactoryClient factoryClient = new FactoryClient();
         factoryClient.Execute();
@@ -16,5 +16,17 @@
 
         PrototypeClient prototypeClient = new PrototypeClient();
         prototypeClient.Execute();
+    }
+
+    public static void ExecuteStrutralPatterns()
+    {
+        AdapterClient adapterClient = new();
+        adapterClient.Execute();
+    }
+
+    public static void Main(string []args)
+    {
+        ExecuteCreationalPatterns();
+        ExecuteStrutralPatterns();
     }
 }

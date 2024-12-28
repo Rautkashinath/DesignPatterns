@@ -49,3 +49,9 @@ Explains how to assemble objects and classes into larger structures while keepin
     - Abstraction (control layer)
     - Implementation (implementation to do real work)
     - Client (provide implementation object to abstraction and get work done through abstraction only)
+
+3. Decorator
+    - Abstract Component
+    - Concrete Component (default implementation)
+    - Base Decorator (wrapping interface for concrete decorators)
+    - Concrete Decorators

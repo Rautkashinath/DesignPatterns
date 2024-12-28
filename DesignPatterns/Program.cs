@@ -25,6 +25,9 @@
 
         BridgeClient bridgeClient = new();
         bridgeClient.Execute();
+
+        DecoratorClient decoratorClient = new DecoratorClient();
+        decoratorClient.Execute();
     }
 
     public static void Main(string []args)

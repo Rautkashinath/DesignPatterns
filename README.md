@@ -2,6 +2,7 @@
 Implementation of design patterns using C#
 
 Creational Design Patterns:
+Provides various object creation mechanism which increase flexiblity and reuse of existing code
 
 1. Factory Method
     - Abtract Factory
@@ -32,3 +33,19 @@ Creational Design Patterns:
     - Lazy with Static Constructor (To Ensure fields are initialzed before they are accessed)
     - Fully Lazy with Nested Class
     - Using DotNet Lazy Class type
+
+
+
+Structural Design Patterns:
+Explains how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.
+
+1. Adapter
+    - Interface
+    - Adapter (must follow client interface)
+    - Adaptee (legacy or TPL adaptee)
+    - Client
+
+2. Bridge
+    - Abstraction (control layer)
+    - Implementation (implementation to do real work)
+    - Client (provide implementation object to abstraction and get work done through abstraction only)

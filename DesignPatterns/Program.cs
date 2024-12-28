@@ -22,6 +22,9 @@
     {
         AdapterClient adapterClient = new();
         adapterClient.Execute();
+
+        BridgeClient bridgeClient = new();
+        bridgeClient.Execute();
     }
 
     public static void Main(string []args)

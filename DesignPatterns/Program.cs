@@ -31,6 +31,9 @@
 
         CompositeClient compositeClient = new CompositeClient();
         compositeClient.Execute();
+
+        ProxyClient proxyClient = new ProxyClient();
+        proxyClient.Execute();
     }
 
     public static void Main(string []args)

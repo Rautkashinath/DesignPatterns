@@ -66,3 +66,9 @@ Explains how to assemble objects and classes into larger structures while keepin
     - TPL, Framework, Subsystems
     - Facade
     - Client
+
+6. Proxy (substitute or placeholder for another object)
+    - Service Interface
+    - Service
+    - Proxy
+    - Client

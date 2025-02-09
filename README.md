@@ -50,7 +50,13 @@ Explains how to assemble objects and classes into larger structures while keepin
     - Implementation (implementation to do real work)
     - Client (provide implementation object to abstraction and get work done through abstraction only)
 
-3. Decorator
+3. Composite
+    - Component (Interface)
+    - Composite (Provides way to add and remove component and implement component(interface) method)
+    - Leaf (does the real work)
+    - Client
+
+4. Decorator
     - Abstract Component
     - Concrete Component (default implementation)
     - Base Decorator (wrapping interface for concrete decorators)

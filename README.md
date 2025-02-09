@@ -61,6 +61,7 @@ Explains how to assemble objects and classes into larger structures while keepin
     - Concrete Component (default implementation)
     - Base Decorator (wrapping interface for concrete decorators)
     - Concrete Decorators
+    
 5. Facade
     - TPL, Framework, Subsystems
     - Facade

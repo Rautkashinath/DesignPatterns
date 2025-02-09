@@ -28,6 +28,9 @@
 
         DecoratorClient decoratorClient = new DecoratorClient();
         decoratorClient.Execute();
+
+        CompositeClient compositeClient = new CompositeClient();
+        compositeClient.Execute();
     }
 
     public static void Main(string []args)
